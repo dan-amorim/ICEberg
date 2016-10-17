@@ -1,0 +1,102 @@
+body {
+	margin: 0px;
+}
+
+div {
+	position: absolute;
+}
+
+form {
+	position: absolute;
+}
+
+#main {
+	background: yellow;
+	top: 5%;
+	height: 90%;
+	width: 100%;
+}
+
+#header, #footer {
+	height: 5%;
+	width: 100%;
+	background: #4D4D4D;
+}
+
+#footer {
+	bottom: 0px;
+}
+
+#variables {
+	background: #DDDDDD;
+	height: 100%;
+	width: 300px;
+}
+
+#interactions {
+	background: #DDDDDD;
+	height: 100%;
+	width: 300px;
+	right: 0px;
+}
+
+#viewport {
+	background: #FFFFFF;
+	height: 100%;
+	left: 300px;
+	top: 0px;
+	width: calc(100% - 600px);
+}
+
+#interaction-histogram {
+	margin: 5px;
+	width: 290px;
+	height: 20%;
+}
+
+#interaction-list {
+	margin: 5px;
+	width: 290px;
+	height: calc(80% - 15px);
+	top: calc(20% + 5px);
+}
+
+#variable-list {
+	margin: 5px;
+	width: 290px;
+	height: calc(100% - 10px);
+}
+
+label {
+	width: 200px;
+	left: 50%;
+	top: 10px;
+	transform: translate(-50%, 0);
+}
+
+#ice-chart {
+	margin: 4px;
+	height: 65%;
+	width: calc(100% - 8px);
+}
+
+.line {
+	stroke-width: 2;	
+	opacity: 0.5;
+	fill: none;
+}
+
+#histogram-chart {
+	margin: 4px;
+	top: calc(65% + 4px);
+	height: calc(35% - 12px);
+	width: calc(100% - 8px);
+}
+
+.bar-histogram {
+  fill: steelblue;
+}
+
+.iceseries {
+  clip-path: url(#clip);
+}
