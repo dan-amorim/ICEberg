@@ -82,6 +82,7 @@
 				.call(d3.axisLeft(viz.ice.y));				
 			//Criando linhas
 			var line = d3.line()
+				.curve(d3.curveMonotoneX)
 				.x(function(d) {
 					return viz.ice.x(d.x)
 				})
@@ -121,6 +122,7 @@
 
 			//Criando linhas
 			var line = d3.line()
+				.curve(d3.curveMonotoneX)
 				.x(function(d) {
 					return viz.ice.x(d.x)
 				})
