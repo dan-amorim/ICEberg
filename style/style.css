@@ -1,5 +1,6 @@
 body {
 	margin: 0px;
+	background: #4D4D4D;
 }
 
 div {
@@ -10,47 +11,93 @@ form {
 	position: absolute;
 }
 
+img {
+	left: 5px;
+	top: calc(50% - 27px);
+	height: 55px;
+	width: 55px;
+	position: absolute;
+}
+
+.selection {
+	fill-opacity: 0.2; 
+}
+
+h1 {
+	color: #4D4D4D;
+	font-family: "Arial", Arial, Sans-Serif;
+	font-size: 40px;
+    height: 41px; 
+	position: absolute;
+	margin: 0;	
+}
+
+h1.title-var, h1.interaction-var {
+	width: 98%;
+	left: 1%;
+	top: 3px;
+    display:flex;
+    align-items: center;
+    justify-content: center;		
+}
+
+h1.title {
+	top: calc((100% - 41px)/2);
+	left: 75px;
+}
+
 #main {
-	background: yellow;
-	top: 5%;
-	height: 90%;
-	width: 100%;
+	top: 10%;
+	left: 1%;
+	height: 88%;
+	width: 98%;
 }
 
-#header, #footer {
-	height: 5%;
-	width: 100%;
-	background: #4D4D4D;
+#header {
+	height: 7%;
+	width: 98%;
+	top: 1%;
+	left: 1%;
+	background: #EEEEEE;
+	box-shadow: 
+		-2px -2px 4px rgba(0,0,0,0.14),
+		-5px -5px 6px rgba(0,0,0,0.28),
+		2px 2px 4px rgba(0,0,0,0.14),
+		5px 5px 6px rgba(0,0,0,0.28);
 }
 
-#footer {
-	bottom: 0px;
-}
-
-#variables {
-	background: #DDDDDD;
+#variables, #interactions {
 	height: 100%;
-	width: 300px;
+	background: #EEEEEE;
+	width: 300px;	
+	box-shadow: 
+		-2px -2px 4px rgba(0,0,0,0.14),
+		-5px -5px 6px rgba(0,0,0,0.28),
+		2px 2px 4px rgba(0,0,0,0.14),
+		5px 5px 6px rgba(0,0,0,0.28);
 }
 
 #interactions {
-	background: #DDDDDD;
-	height: 100%;
-	width: 300px;
 	right: 0px;
 }
 
 #viewport {
 	background: #FFFFFF;
 	height: 100%;
-	left: 300px;
+	left: calc(300px + 1%);
 	top: 0px;
-	width: calc(100% - 600px);
+	width: calc(100% - 600px - 2%);
+	box-shadow: 
+		-2px -2px 4px rgba(0,0,0,0.14),
+		-5px -5px 6px rgba(0,0,0,0.28),
+		2px 2px 4px rgba(0,0,0,0.14),
+		5px 5px 6px rgba(0,0,0,0.28);
 }
 
 #interaction-histogram {
 	margin: 5px;
 	width: 290px;
+	top: 43px;
 	height: 20%;
 }
 
@@ -58,12 +105,13 @@ form {
 	margin: 5px;
 	width: 290px;
 	height: calc(80% - 15px);
-	top: calc(20% + 5px);
+	top: calc(20% + 48px);
 }
 
 #variable-list {
 	margin: 5px;
 	width: 290px;
+	top: 42px;
 	height: calc(100% - 10px);
 }
 
@@ -94,7 +142,7 @@ label {
 }
 
 .bar-histogram {
-  fill: steelblue;
+  fill: #4D4D4D;
 }
 
 .iceseries {

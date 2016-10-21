@@ -15,7 +15,7 @@
 		});
 		viz.histogram.build();
 		viz.interaction.build();
-		viz.ice.build();		
+		viz.ice.build();	
 	};
 	viz.onVarlistChange = function() {
 		viz.selection.icevar = $('input[name=variable]:checked', '#variable-list').val();
